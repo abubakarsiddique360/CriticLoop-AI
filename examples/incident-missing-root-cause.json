@@ -1,0 +1,9 @@
+{
+  "title": "Payment webhook backlog",
+  "service": "payments-worker",
+  "events": [
+    { "time": "2026-03-04T14:02:00Z", "note": "Queue depth alert: 48,000 unprocessed webhooks." },
+    { "time": "2026-03-04T14:19:00Z", "note": "Consumer replicas increased from 4 to 12." },
+    { "time": "2026-03-04T14:41:00Z", "note": "Backlog drained below 500 messages." }
+  ]
+}

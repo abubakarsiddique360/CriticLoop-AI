@@ -1,0 +1,11 @@
+{
+  "title": "Checkout latency spike",
+  "service": "checkout-api",
+  "impact": "About 12% of checkout requests took longer than three seconds for 23 minutes.",
+  "root_cause": "Release 1.4.0 shipped an unbounded in-process cache.",
+  "events": [
+    { "time": "2026-03-02T09:03:00Z", "note": "Latency alert fired: p95 at 4.2 seconds." },
+    { "time": "2026-03-02T09:11:00Z", "note": "Release 1.4.0 rolled back." },
+    { "time": "2026-03-02T09:26:00Z", "note": "p95 recovered to 320 milliseconds." }
+  ]
+}
